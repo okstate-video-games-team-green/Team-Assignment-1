@@ -4,16 +4,15 @@ using UnityEngine.UI;
 
 public class TrackScore : MonoBehaviour {
 
-	public Text scoreText; //TODO:drag this into unity editor
+	public Text scoreText; 
 	private int score = 0;
 
 	public void Start(){
-		scoreText.text = score.ToString ();
+		scoreText.text = string.Format ("Score: {0}",score);
 	}
 
 	public void IncrementScore (int amount) {
-		//TODO: update score variable & text
-		throw new UnityException("Aaron - TODO");
+		score++;
 	}
 
 	//for end of game situation...
