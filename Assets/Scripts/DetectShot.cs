@@ -8,7 +8,6 @@ public class DetectShot: MonoBehaviour {
 
 
 	//TODO: this might need to be OnTrigger
-	//TODO: Make sure this is a real method
 	public void OnCollision(Collision col){
 		scoreTracker.IncrementScore (scoreIncrAmt);
 	}
