@@ -8,7 +8,12 @@ public class DetectShot: MonoBehaviour {
 
 
 	//TODO: this might need to be OnTrigger
-	public void OnCollision(Collision col){
+	 void OnTriggerEnter(Collision collision){
 		scoreTracker.IncrementScore (scoreIncrAmt);
+
+
+
+
+
 	}
 }
