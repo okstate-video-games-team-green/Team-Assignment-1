@@ -12,6 +12,7 @@ public class Countdown : MonoBehaviour {
 	public DisplayGameOver gameOverDisplay;
 	public Text countdownText;
 	public int startTime = 60;
+	public MakeBottle makeBottle;
 
 	//make sure the clock shows accurate start value even when start menu is displayed
 	public void Start() {
@@ -39,6 +40,8 @@ public class Countdown : MonoBehaviour {
 		{
 			gameInProgress = false;
 			gameOverDisplay.GameOver ();
+			makeBottle.gameOn = 0;
+
 		}
 	}
 

@@ -4,7 +4,9 @@ using UnityEngine.SceneManagement;
 
 public class GameOverActions : MonoBehaviour {
 
+
 	public void PlayAgain(){
+		
 		SceneManager.LoadScene ("mainScene");
 	}
 
