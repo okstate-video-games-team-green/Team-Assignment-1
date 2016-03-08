@@ -13,7 +13,7 @@ public class MovePyramid : MonoBehaviour {
 	void Start () {
 
 
-		pyramid.transform.position = new Vector3 (-25, 0, 0);
+		pyramid.transform.position = new Vector3 (-10, 0, 10);
 			
 	
 	}
