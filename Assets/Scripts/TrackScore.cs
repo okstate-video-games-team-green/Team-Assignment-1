@@ -12,7 +12,6 @@ public class TrackScore : MonoBehaviour {
 	}
 
 	public void IncrementScore () {
-		print ("incScore");
 		score++;
 	}
 

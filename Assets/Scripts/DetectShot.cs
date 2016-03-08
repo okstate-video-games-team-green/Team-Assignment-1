@@ -11,13 +11,12 @@ public class DetectShot: MonoBehaviour {
 	}
 
 	//TODO: this might need to be OnTrigger
-	void OnTriggerEnter(Collider collision){
-		//print ("incScore");
-		uiCanvas.IncrementScore ();
-
-
-
-
-
+	void OnTriggerEnter(Collider col){
+		if (col.gameObject.name == "ball(Clone)") {
+			Destroy (col.gameObject);
+		} else {
+			uiCanvas.IncrementScore ();
+			Destroy (col.gameObject);
+		}
 	}
 }
