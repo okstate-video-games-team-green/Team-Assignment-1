@@ -638,8 +638,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: -150, y: 1, z: 75}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: -100, y: 1, z: 75}
+  m_Center: {x: -1.27, y: 0, z: 0}
 --- !u!114 &1007490243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1033,7 +1033,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1226885426}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1406c4a664e9271498f6f93760c7b5f5, type: 3}
@@ -1206,7 +1206,10 @@ MonoBehaviour:
   gameOn: 0
   created: 1
   SpawnRate: 1
-  bottlePrefab: {fileID: 148066, guid: 2bc8f9878ca6412499bead3563e7b9d3, type: 2}
+  bottlePrefab: {fileID: 151086, guid: 2bc8f9878ca6412499bead3563e7b9d3, type: 2}
+  cratePrefab: {fileID: 133272, guid: 107d9bb1db3891c4bb9c04102884663b, type: 2}
+  pinPrefab: {fileID: 180178, guid: b52405374a5877a47baa9e465eb11a31, type: 2}
+  duckPrefab: {fileID: 176474, guid: 796532c45d412a24a87ae5b6e0d1ed07, type: 2}
 --- !u!4 &1269209795
 Transform:
   m_ObjectHideFlags: 0

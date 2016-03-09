@@ -9,6 +9,10 @@ public class MakeBottle : MonoBehaviour {
     
     //public Material material;
 	public GameObject bottlePrefab;
+	public GameObject cratePrefab;
+	public GameObject pinPrefab;
+	public GameObject duckPrefab;
+
     
 	void Start ()
     {
@@ -33,14 +37,49 @@ public class MakeBottle : MonoBehaviour {
     }
     
 	public IEnumerator makeBottles(){
-		if (gameOn == 1){
-            yield return new WaitForSeconds (SpawnRate);
-            Instantiate (bottlePrefab);
-            print ("HERE. Created: " + created);
-            created++;
-            StartCoroutine (makeBottles ());
-        }
+		if (gameOn == 1) {
+			yield return new WaitForSeconds (SpawnRate);
+			Instantiate (bottlePrefab);
+			print ("HERE. Created: " + created);
+			created++;
+			StartCoroutine (makeCrates ());
+		}
+	}
 
 	
+		public IEnumerator makeCrates(){
+		if (gameOn == 1) {
+			yield return new WaitForSeconds (SpawnRate);
+			Instantiate (cratePrefab);
+			print ("HERE. Created: " + created);
+			created++;
+			StartCoroutine (makePins ());
+		}
 	}
+
+
+			public IEnumerator makePins(){
+		if (gameOn == 1) {
+			yield return new WaitForSeconds (SpawnRate);
+			Instantiate (pinPrefab);
+			print ("HERE. Created: " + created);
+			created++;
+			StartCoroutine (makeDucks ());
+		}
+	}
+
+
+				public IEnumerator makeDucks(){
+		if (gameOn == 1) {
+			yield return new WaitForSeconds (SpawnRate);
+			Instantiate (duckPrefab);
+			print ("HERE. Created: " + created);
+			created++;
+			StartCoroutine (makeBottles ());
+		}
+	}
+
+
+
+
 }
