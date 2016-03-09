@@ -495,7 +495,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb1ae4844321eee4cbae30cc920bd226, type: 3}
   m_IsPrefabParent: 0
-<<<<<<< HEAD
 --- !u!1 &905556742
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,8 +568,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 905556742}
-=======
->>>>>>> 923e54c324c009a0eaef7248c6ec07fca52edd12
 --- !u!1 &1007490241
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,12 +1165,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOn: 0
   created: 1
-<<<<<<< HEAD
-=======
-  bottlePrefab: {fileID: 148066, guid: 2bc8f9878ca6412499bead3563e7b9d3, type: 2}
->>>>>>> 923e54c324c009a0eaef7248c6ec07fca52edd12
   SpawnRate: 1
-  bottlePrefab: {fileID: 171828, guid: 6259827bb65ec584681e21709c0f27be, type: 2}
+  bottlePrefab: {fileID: 148066, guid: 2bc8f9878ca6412499bead3563e7b9d3, type: 2}
 --- !u!4 &1269209795
 Transform:
   m_ObjectHideFlags: 0
