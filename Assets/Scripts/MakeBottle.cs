@@ -14,6 +14,7 @@ public class MakeBottle : MonoBehaviour {
     {
         //StartCoroutine (makeBottles ());
     }
+
 	
 	// Update is called once per frame
 	void Update () {
@@ -39,5 +40,7 @@ public class MakeBottle : MonoBehaviour {
             created++;
             StartCoroutine (makeBottles ());
         }
+
+	
 	}
 }

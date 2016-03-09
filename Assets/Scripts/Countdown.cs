@@ -7,7 +7,7 @@ public class Countdown : MonoBehaviour {
 
 	public bool gameInProgress = false;
 	private float remainingTime;
-	
+
 	public DisplayGameOver gameOverDisplay;
 	public Text countdownText;
 	public int startTime = 60;
