@@ -7,11 +7,11 @@ public class TrackScore : MonoBehaviour {
 	public Text scoreText; 
 	private int score = 0;
 
-	public void Start(){
+	 void Update(){
 		scoreText.text = string.Format ("Score: {0}",score);
 	}
 
-	public void IncrementScore (int amount) {
+	public void IncrementScore () {
 		score++;
 	}
 

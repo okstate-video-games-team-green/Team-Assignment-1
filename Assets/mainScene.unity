@@ -495,6 +495,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb1ae4844321eee4cbae30cc920bd226, type: 3}
   m_IsPrefabParent: 0
+<<<<<<< HEAD
 --- !u!1 &905556742
 GameObject:
   m_ObjectHideFlags: 0
@@ -568,6 +569,8 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 905556742}
+=======
+>>>>>>> 923e54c324c009a0eaef7248c6ec07fca52edd12
 --- !u!1 &1007490241
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,7 +621,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1007490241}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -5, z: 0}
+  m_LocalPosition: {x: 0, y: -12.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -649,8 +652,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c77d107e28c83c41a3e1e29c9fcdd50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreTracker: {fileID: 1007490243}
-  scoreIncrAmt: 1
 --- !u!1 &1059751757
 GameObject:
   m_ObjectHideFlags: 0
@@ -999,7 +1000,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1406c4a664e9271498f6f93760c7b5f5, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1167,6 +1168,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOn: 0
   created: 1
+<<<<<<< HEAD
+=======
+  bottlePrefab: {fileID: 148066, guid: 2bc8f9878ca6412499bead3563e7b9d3, type: 2}
+>>>>>>> 923e54c324c009a0eaef7248c6ec07fca52edd12
   SpawnRate: 1
   bottlePrefab: {fileID: 171828, guid: 6259827bb65ec584681e21709c0f27be, type: 2}
 --- !u!4 &1269209795
