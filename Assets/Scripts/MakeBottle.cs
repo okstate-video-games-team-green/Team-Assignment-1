@@ -7,11 +7,11 @@ public class MakeBottle : MonoBehaviour {
 	//public Material material;
 	public GameObject bottlePrefab;
 	public int SpawnRate = 1;
-	public int gameOn =1;//change to 0 to stop pyramids from spawning
+	public int gameOn = 0; //change to 0 to stop pyramids from spawning
 
 
 	void Start () {
-		StartCoroutine (makeBottles ());
+//		StartCoroutine (makeBottles ());
 	}
 	
 	// Update is called once per frame
@@ -26,6 +26,11 @@ public class MakeBottle : MonoBehaviour {
 
 	}
 
+    public void StartGame() {
+        gameOn = 1;
+        StartCoroutine (makeBottles());
+    }
+
 	IEnumerator makeBottles(){
 		
 		if (gameOn == 1) {
@@ -35,14 +40,5 @@ public class MakeBottle : MonoBehaviour {
 			created++;
 			StartCoroutine (makeBottles ());
 		}
-
-
-
-
 	}
-
-
-
-
-
 }

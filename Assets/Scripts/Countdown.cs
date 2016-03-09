@@ -7,7 +7,7 @@ public class Countdown : MonoBehaviour {
 
 	private bool gameInProgress = false;
 	private float remainingTime;
-	private float altRemainingTime; // Used only for AltCountDown()
+
 
 	public DisplayGameOver gameOverDisplay;
 	public Text countdownText;
@@ -22,7 +22,6 @@ public class Countdown : MonoBehaviour {
 	//Not using start method so that another class can control when the timer starts
 	public void StartCountdown () {
 		remainingTime = startTime;
-		// altRemainingTime = 60f;
 		gameInProgress = true;
 	}
 
@@ -48,21 +47,4 @@ public class Countdown : MonoBehaviour {
 	public bool GameInProgress() {
 		return gameInProgress;
 	}
-
-	/*
-    AltCountDown() - Alternative to Update().
-    Allows the function to end compared to an update script
-    which would keep going. I don't know if it's any more
-    useful than Update(), but I like the idea.
-    */    
-	/*public IEnumerator AltCountDown()
-	{
-		// altRemainingTime = 60
-		while (altRemainingTime >= 0) {
-			yield return new WaitForSeconds(1);
-			altRemainingTime -= 1;
-		}
-		GameOver();
-	}*/
-		
 }
