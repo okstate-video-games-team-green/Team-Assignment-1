@@ -12,6 +12,7 @@ public class MakeBottle : MonoBehaviour {
 	public GameObject cratePrefab;
 	public GameObject pinPrefab;
 	public GameObject duckPrefab;
+	public GameObject barrelPrefab;
 
     
 	void Start ()
@@ -71,11 +72,18 @@ public class MakeBottle : MonoBehaviour {
 			yield return new WaitForSeconds (SpawnRate);
 			Instantiate (duckPrefab);
 			created++;
-			StartCoroutine (makeBottles ());
+			StartCoroutine (makeBarrels ());
 		}
 	}
 
-
+	public IEnumerator makeBarrels(){
+		if (gameOn == 1) {
+			yield return new WaitForSeconds (SpawnRate);
+			Instantiate (barrelPrefab);
+			created++;
+			StartCoroutine (makeBottles ());
+		}
+	}
 
 
 }

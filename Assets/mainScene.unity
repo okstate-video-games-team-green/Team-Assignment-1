@@ -1154,10 +1154,11 @@ MonoBehaviour:
   gameOn: 0
   created: 1
   SpawnRate: 1
-  bottlePrefab: {fileID: 151086, guid: 2bc8f9878ca6412499bead3563e7b9d3, type: 2}
+  bottlePrefab: {fileID: 154640, guid: a04d5c73448d9724dbdfd0cf0d572570, type: 2}
   cratePrefab: {fileID: 133272, guid: 107d9bb1db3891c4bb9c04102884663b, type: 2}
   pinPrefab: {fileID: 180178, guid: b52405374a5877a47baa9e465eb11a31, type: 2}
   duckPrefab: {fileID: 176474, guid: 796532c45d412a24a87ae5b6e0d1ed07, type: 2}
+  barrelPrefab: {fileID: 151086, guid: 2bc8f9878ca6412499bead3563e7b9d3, type: 2}
 --- !u!4 &1269209795
 Transform:
   m_ObjectHideFlags: 0
