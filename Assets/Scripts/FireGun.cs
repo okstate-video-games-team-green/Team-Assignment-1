@@ -11,10 +11,10 @@ public class FireGun : MonoBehaviour {
 	public Countdown countdown;
 
 	private float lastFireSec = 0;
-
+	private AudioSource audioSource;
 	// Use this for initialization
 	void Start () {
-	
+		audioSource = GetComponent<AudioSource> ();
 	}
 	
 	// Update is called once per frame
@@ -23,7 +23,7 @@ public class FireGun : MonoBehaviour {
 			
             // Create a bullet object.
 			GameObject bullet = (GameObject)Instantiate (gunBullet);
-
+			audioSource.Play ();
             bullet.transform.position = barrel.transform.position;
             
             //set bullet to position of gun
