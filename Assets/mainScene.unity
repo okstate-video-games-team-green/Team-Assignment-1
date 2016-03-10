@@ -1548,7 +1548,7 @@ MonoBehaviour:
   gameInProgress: 0
   gameOverDisplay: {fileID: 491453011}
   countdownText: {fileID: 1875735717}
-  startTime: 10
+  startTime: 60
   makeBottle: {fileID: 1269209794}
 --- !u!1 &1876206666
 GameObject:

@@ -12,6 +12,7 @@ GameObject:
   - 23: {fileID: 2392142}
   - 54: {fileID: 5440306}
   - 65: {fileID: 6586394}
+  - 114: {fileID: 11420032}
   m_Layer: 0
   m_Name: Duckie_001
   m_TagString: Untagged
@@ -31,6 +32,7 @@ GameObject:
   - 23: {fileID: 2316338}
   - 54: {fileID: 5482874}
   - 65: {fileID: 6546274}
+  - 114: {fileID: 11471520}
   m_Layer: 0
   m_Name: Duckie_006
   m_TagString: Untagged
@@ -50,6 +52,7 @@ GameObject:
   - 23: {fileID: 2385838}
   - 54: {fileID: 5452036}
   - 65: {fileID: 6529440}
+  - 114: {fileID: 11464338}
   m_Layer: 0
   m_Name: Duckie
   m_TagString: Untagged
@@ -69,6 +72,7 @@ GameObject:
   - 23: {fileID: 2311334}
   - 54: {fileID: 5449802}
   - 65: {fileID: 6534570}
+  - 114: {fileID: 11465390}
   m_Layer: 0
   m_Name: Duckie_003
   m_TagString: Untagged
@@ -85,6 +89,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 476470}
   - 114: {fileID: 11463464}
+  - 114: {fileID: 11411614}
   m_Layer: 0
   m_Name: RubberDuckwithGravity
   m_TagString: Untagged
@@ -123,6 +128,7 @@ GameObject:
   - 23: {fileID: 2352490}
   - 54: {fileID: 5409764}
   - 65: {fileID: 6502264}
+  - 114: {fileID: 11415600}
   m_Layer: 0
   m_Name: Duckie_005
   m_TagString: Untagged
@@ -142,6 +148,7 @@ GameObject:
   - 23: {fileID: 2355844}
   - 54: {fileID: 5482992}
   - 65: {fileID: 6561556}
+  - 114: {fileID: 11499878}
   m_Layer: 0
   m_Name: Duckie_002
   m_TagString: Untagged
@@ -678,6 +685,43 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.026346, y: 2.2984834, z: 1.8380605}
   m_Center: {x: 0, y: -0.0064834966, z: 0.91903025}
+--- !u!114 &11411614
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 176474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9038a5ced5324f34691f6c25b88dfa22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreTracker: {fileID: 0}
+  numberOfOffs: 0
+--- !u!114 &11415600
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41713bf5c849e034d91c1eafc4206a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yLevel: -2
+--- !u!114 &11420032
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41713bf5c849e034d91c1eafc4206a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yLevel: -2
 --- !u!114 &11463464
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -691,6 +735,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pyramid: {fileID: 176474}
   speed: 0.1
+--- !u!114 &11464338
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41713bf5c849e034d91c1eafc4206a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yLevel: -2
+--- !u!114 &11465390
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 174470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41713bf5c849e034d91c1eafc4206a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yLevel: -2
+--- !u!114 &11471520
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 156320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41713bf5c849e034d91c1eafc4206a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yLevel: -2
+--- !u!114 &11499878
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41713bf5c849e034d91c1eafc4206a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yLevel: -2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

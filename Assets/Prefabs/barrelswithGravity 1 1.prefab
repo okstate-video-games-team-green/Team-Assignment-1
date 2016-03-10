@@ -12,6 +12,7 @@ GameObject:
   - 23: {fileID: 2329482}
   - 54: {fileID: 5468492}
   - 65: {fileID: 6588406}
+  - 114: {fileID: 11428452}
   m_Layer: 0
   m_Name: Cylinder_001
   m_TagString: Untagged
@@ -28,7 +29,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 472658}
   - 114: {fileID: 11415460}
-  - 114: {fileID: 11430444}
+  - 114: {fileID: 11432160}
   m_Layer: 0
   m_Name: barrelswithGravity 1 1
   m_TagString: Untagged
@@ -48,6 +49,7 @@ GameObject:
   - 23: {fileID: 2316628}
   - 54: {fileID: 5492038}
   - 65: {fileID: 6570290}
+  - 114: {fileID: 11428954}
   m_Layer: 0
   m_Name: Cylinder_002
   m_TagString: Untagged
@@ -86,6 +88,7 @@ GameObject:
   - 23: {fileID: 2316778}
   - 54: {fileID: 5481168}
   - 65: {fileID: 6554612}
+  - 114: {fileID: 11414656}
   m_Layer: 0
   m_Name: Cylinder_003
   m_TagString: Untagged
@@ -105,6 +108,7 @@ GameObject:
   - 23: {fileID: 2354814}
   - 54: {fileID: 5432216}
   - 65: {fileID: 6586450}
+  - 114: {fileID: 11476698}
   m_Layer: 0
   m_Name: Cylinder_005
   m_TagString: Untagged
@@ -124,6 +128,7 @@ GameObject:
   - 23: {fileID: 2339364}
   - 54: {fileID: 5422124}
   - 65: {fileID: 6516630}
+  - 114: {fileID: 11483858}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -143,6 +148,7 @@ GameObject:
   - 23: {fileID: 2303248}
   - 54: {fileID: 5466338}
   - 65: {fileID: 6575200}
+  - 114: {fileID: 11432854}
   m_Layer: 0
   m_Name: Cylinder_004
   m_TagString: Untagged
@@ -673,6 +679,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.39, y: 1.71, z: 1.72}
   m_Center: {x: 0, y: 0.02, z: -0.09}
+--- !u!114 &11414656
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 182098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41713bf5c849e034d91c1eafc4206a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yLevel: -2
 --- !u!114 &11415460
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -686,7 +704,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pyramid: {fileID: 151086}
   speed: 0.1
---- !u!114 &11430444
+--- !u!114 &11428452
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 101492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41713bf5c849e034d91c1eafc4206a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yLevel: -2
+--- !u!114 &11428954
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 167690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41713bf5c849e034d91c1eafc4206a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yLevel: -2
+--- !u!114 &11432160
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -699,13 +741,57 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreTracker: {fileID: 0}
   numberOfOffs: 0
+--- !u!114 &11432854
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 199918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41713bf5c849e034d91c1eafc4206a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yLevel: -2
+--- !u!114 &11476698
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 182356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41713bf5c849e034d91c1eafc4206a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yLevel: -2
+--- !u!114 &11483858
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41713bf5c849e034d91c1eafc4206a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yLevel: -2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: numberOfOffs
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: yLevel
+      value: -2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 151086}

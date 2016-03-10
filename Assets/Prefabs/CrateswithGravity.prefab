@@ -12,6 +12,7 @@ GameObject:
   - 23: {fileID: 2375130}
   - 54: {fileID: 5473370}
   - 65: {fileID: 6548224}
+  - 114: {fileID: 11434298}
   m_Layer: 0
   m_Name: Crate2
   m_TagString: Untagged
@@ -31,6 +32,7 @@ GameObject:
   - 23: {fileID: 2361510}
   - 54: {fileID: 5428694}
   - 65: {fileID: 6579514}
+  - 114: {fileID: 11462584}
   m_Layer: 0
   m_Name: Crate2.002
   m_TagString: Untagged
@@ -50,6 +52,7 @@ GameObject:
   - 23: {fileID: 2321806}
   - 54: {fileID: 5475522}
   - 65: {fileID: 6578408}
+  - 114: {fileID: 11492578}
   m_Layer: 0
   m_Name: Crate2.001
   m_TagString: Untagged
@@ -66,6 +69,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 457046}
   - 114: {fileID: 11465430}
+  - 114: {fileID: 11470004}
   m_Layer: 0
   m_Name: CrateswithGravity
   m_TagString: Untagged
@@ -85,6 +89,7 @@ GameObject:
   - 23: {fileID: 2329152}
   - 54: {fileID: 5425668}
   - 65: {fileID: 6537082}
+  - 114: {fileID: 11434150}
   m_Layer: 0
   m_Name: Crate2.005
   m_TagString: Untagged
@@ -104,6 +109,7 @@ GameObject:
   - 23: {fileID: 2373090}
   - 54: {fileID: 5411134}
   - 65: {fileID: 6578068}
+  - 114: {fileID: 11482364}
   m_Layer: 0
   m_Name: Crate2.004
   m_TagString: Untagged
@@ -142,6 +148,7 @@ GameObject:
   - 23: {fileID: 2375050}
   - 54: {fileID: 5426474}
   - 65: {fileID: 6500936}
+  - 114: {fileID: 11408618}
   m_Layer: 0
   m_Name: Crate2.003
   m_TagString: Untagged
@@ -672,6 +679,54 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.93, y: 1.76, z: 0.92}
   m_Center: {x: 0.000000059604645, y: -0.00000047683716, z: -0.00000008940697}
+--- !u!114 &11408618
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41713bf5c849e034d91c1eafc4206a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yLevel: -2
+--- !u!114 &11434150
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 133596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41713bf5c849e034d91c1eafc4206a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yLevel: -2
+--- !u!114 &11434298
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41713bf5c849e034d91c1eafc4206a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yLevel: -2
+--- !u!114 &11462584
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 123598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41713bf5c849e034d91c1eafc4206a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yLevel: -2
 --- !u!114 &11465430
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -685,6 +740,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pyramid: {fileID: 133272}
   speed: 0.1
+--- !u!114 &11470004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 133272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9038a5ced5324f34691f6c25b88dfa22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreTracker: {fileID: 0}
+  numberOfOffs: 6
+--- !u!114 &11482364
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41713bf5c849e034d91c1eafc4206a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yLevel: -2
+--- !u!114 &11492578
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41713bf5c849e034d91c1eafc4206a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yLevel: -2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -695,6 +787,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: speed
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: numberOfOffs
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
