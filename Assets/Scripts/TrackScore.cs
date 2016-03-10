@@ -6,6 +6,7 @@ public class TrackScore : MonoBehaviour {
 
 	public Text scoreText; 
 	private int score = 0;
+	public Countdown countdown;
 
 	 void Update(){
 		if (scoreText != null) {
@@ -14,7 +15,9 @@ public class TrackScore : MonoBehaviour {
 	}
 
 	public void IncrementScore () {
-		score++;
+		if (countdown.GameInProgress ()) {
+			score++;
+		}
 	}
 
 	//for end of game situation...
