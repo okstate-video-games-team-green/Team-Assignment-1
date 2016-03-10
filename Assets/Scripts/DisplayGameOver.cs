@@ -3,29 +3,34 @@ using System.Collections;
 using UnityEngine.UI;
 
 //TODO: The actual gameover stuff
+using UnityEngine.SceneManagement;
+
+
 public class DisplayGameOver : MonoBehaviour {
 
 	public GameObject gameOverPanel;
 	public TrackScore trackScore;
+	public HighScoreBank scoreBank;
 	public Text highScoreText;
-	private int highScoreValue = 0;
 
 	// Update is called once per frame
 
 	public void GameOver() {
 		int lastScore = trackScore.GetScore ();
-		if (highScoreValue < lastScore) {
-			highScoreValue = lastScore;
-			highScoreText.text = "You set the high score of " + highScoreValue.ToString ();
+		if (scoreBank.registerScore(lastScore)) {
+			highScoreText.text = "You set the high score of " + scoreBank.highScore;
 		} else {
-			highScoreText.text = "Your score: " + lastScore.ToString()+ "\nHigh Score:" + highScoreValue.ToString ();
+			highScoreText.text = "Your score: " + lastScore.ToString()+ "\nHigh Score:" + scoreBank.highScore.ToString ();
 		}
 		gameOverPanel.SetActive(true);
-		
     }
 
-	void Awake(){
-		DontDestroyOnLoad (this);//for keeping high score in memory
+	public void PlayAgain(){
+		SceneManager.LoadScene ("mainScene");
+	}
+
+	public void Exit() {
+		Application.Quit ();
 	}
 
 }

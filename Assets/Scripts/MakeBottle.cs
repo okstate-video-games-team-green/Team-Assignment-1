@@ -40,7 +40,6 @@ public class MakeBottle : MonoBehaviour {
 		if (gameOn == 1) {
 			yield return new WaitForSeconds (SpawnRate);
 			Instantiate (bottlePrefab);
-			print ("HERE. Created: " + created);
 			created++;
 			StartCoroutine (makeCrates ());
 		}
@@ -51,7 +50,6 @@ public class MakeBottle : MonoBehaviour {
 		if (gameOn == 1) {
 			yield return new WaitForSeconds (SpawnRate);
 			Instantiate (cratePrefab);
-			print ("HERE. Created: " + created);
 			created++;
 			StartCoroutine (makePins ());
 		}
@@ -62,7 +60,6 @@ public class MakeBottle : MonoBehaviour {
 		if (gameOn == 1) {
 			yield return new WaitForSeconds (SpawnRate);
 			Instantiate (pinPrefab);
-			print ("HERE. Created: " + created);
 			created++;
 			StartCoroutine (makeDucks ());
 		}
@@ -73,7 +70,6 @@ public class MakeBottle : MonoBehaviour {
 		if (gameOn == 1) {
 			yield return new WaitForSeconds (SpawnRate);
 			Instantiate (duckPrefab);
-			print ("HERE. Created: " + created);
 			created++;
 			StartCoroutine (makeBottles ());
 		}

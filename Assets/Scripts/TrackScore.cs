@@ -8,7 +8,9 @@ public class TrackScore : MonoBehaviour {
 	private int score = 0;
 
 	 void Update(){
-		scoreText.text = string.Format ("Score: {0}",score);
+		if (scoreText != null) {
+			scoreText.text = string.Format ("Score: {0}", score);
+		}
 	}
 
 	public void IncrementScore () {
