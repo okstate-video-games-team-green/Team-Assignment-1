@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
+
 
 public class FireGun : MonoBehaviour {
 	
     public GameObject gunBullet;
 	public GameObject barrel;
 
+	public Countdown countdown;
 
 	// Use this for initialization
 	void Start () {
@@ -14,7 +17,7 @@ public class FireGun : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetMouseButtonDown (0)) {
+		if (countdown.GameInProgress() && Input.GetMouseButtonDown (0)) {
 			
             // Create a bullet object.
 			GameObject bullet = (GameObject)Instantiate (gunBullet);
