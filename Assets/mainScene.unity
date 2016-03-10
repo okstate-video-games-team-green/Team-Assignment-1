@@ -351,7 +351,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 463390621}
-  - 114: {fileID: 463390620}
   - 114: {fileID: 463390622}
   m_Layer: 0
   m_Name: High Score Tracker
@@ -360,17 +359,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &463390620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 463390619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54e7b703a2c7d8f438e9c5077f8f81e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &463390621
 Transform:
   m_ObjectHideFlags: 0
@@ -382,7 +370,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
 --- !u!114 &463390622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -576,6 +564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gunBullet: {fileID: 194422, guid: 503bf1053976e01418d0d3cf11ba0fd9, type: 2}
   barrel: {fileID: 609571699}
+  countdown: {fileID: 1875735719}
 --- !u!1 &905556742
 GameObject:
   m_ObjectHideFlags: 0
@@ -649,87 +638,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 905556742}
---- !u!1 &1007490241
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1007490244}
-  - 114: {fileID: 1007490243}
-  - 65: {fileID: 1007490242}
-  - 54: {fileID: 1007490245}
-  - 114: {fileID: 1007490246}
-  m_Layer: 0
-  m_Name: ScoreCount
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &1007490242
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1007490241}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: -100, y: 1, z: 75}
-  m_Center: {x: -1.27, y: 0, z: 0}
---- !u!114 &1007490243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1007490241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f85b011b2b2a1ad4981a21e9f0214cee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 1965400013}
---- !u!4 &1007490244
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1007490241}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -12.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
---- !u!54 &1007490245
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1007490241}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &1007490246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1007490241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c77d107e28c83c41a3e1e29c9fcdd50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1059751757
 GameObject:
   m_ObjectHideFlags: 0
@@ -1478,6 +1386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gunBullet: {fileID: 194422, guid: 503bf1053976e01418d0d3cf11ba0fd9, type: 2}
   barrel: {fileID: 0}
+  countdown: {fileID: 0}
 --- !u!1 &1760019982
 GameObject:
   m_ObjectHideFlags: 0
@@ -1761,6 +1670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1965400013}
+  countdown: {fileID: 1875735719}
 --- !u!114 &1965400013
 MonoBehaviour:
   m_ObjectHideFlags: 0

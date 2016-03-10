@@ -3,7 +3,7 @@ using System.Collections;
 
 public class DetectOff : MonoBehaviour {
 
-	public int yLevel;
+	public int yLevel = -2;
 	private bool notifiedOff = false;
 
 	// Use this for initialization

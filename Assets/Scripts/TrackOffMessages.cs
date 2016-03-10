@@ -11,6 +11,10 @@ public class TrackOffMessages : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		offsLeft = numberOfOffs;
+		if (scoreTracker == null) {
+			scoreTracker = FindObjectOfType<TrackScore> ();
+			print (scoreTracker);
+		}
 	}
 	
 	// Update is called once per frame

@@ -28,6 +28,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 472658}
   - 114: {fileID: 11415460}
+  - 114: {fileID: 11430444}
   m_Layer: 0
   m_Name: barrelswithGravity 1 1
   m_TagString: Untagged
@@ -685,6 +686,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pyramid: {fileID: 151086}
   speed: 0.1
+--- !u!114 &11430444
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 151086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9038a5ced5324f34691f6c25b88dfa22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreTracker: {fileID: 0}
+  numberOfOffs: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
