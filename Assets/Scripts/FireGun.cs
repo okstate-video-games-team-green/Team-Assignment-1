@@ -10,6 +10,8 @@ public class FireGun : MonoBehaviour {
 
 	public Countdown countdown;
 
+	private float lastFireSec = 0;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -17,7 +19,7 @@ public class FireGun : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (countdown.GameInProgress() && Input.GetMouseButtonDown (0)) {
+		if (countdown.GameInProgress() && (lastFireSec +.5f) < Time.realtimeSinceStartup && Input.GetMouseButtonDown (0)) {
 			
             // Create a bullet object.
 			GameObject bullet = (GameObject)Instantiate (gunBullet);
@@ -35,6 +37,7 @@ public class FireGun : MonoBehaviour {
 
 			//bullet.GetComponent<Rigidbody>().AddForce(gun.transform.parent.forward*10000 + gun.transform.up*100000);
 			//bullet.AddComponent<SphereCollider> ();
+			lastFireSec=Time.realtimeSinceStartup;
 		}
 	}
 }
